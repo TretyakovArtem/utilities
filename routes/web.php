@@ -11,6 +11,10 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+use App\Models\Data;
+use App\Resources\Data as DataResource;
+
+$router->get('/data', function () use ($router) {
+    return new DataResource(Data::first());
 });
+
