@@ -12,7 +12,7 @@ use App\Service\Data as DataService;
 
 class DataController extends Controller
 {
-    // метод для получения данных счетчиков
+    // метод для получения данных
     public function index(DataService $dataService)
     {
         $dataService->createMessages();
