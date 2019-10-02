@@ -32,6 +32,8 @@ class Data
             $answer = 'Неизвестная команда';
             $bot->sendMessage($message->getChat()->getId(), 'ok');
         });
+
+        // проверка ci
         $bot->run();
     }
 }
